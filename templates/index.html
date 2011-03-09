@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Feed-o-mizer: convert feeds to valid Atom format</title>
+<link rel="stylesheet" href="/css/common.css" type="text/css" media="all" charset="utf-8"/>
+<link rel="alternate" href="{{ site_url }}/atom" type="application/atom+xml" />
+</head>
+<body>
+<div id="main">
+<div id="head">
+<h1>Feed-o-mizer</h1>
+<h2>Convert feeds to valid Atom format
+<img src="/images/valid-atom.png" alt="[Valid Atom 1.0]" title="Valid Atom 1.0 feed" /></h2>
+<p>
+The application converting <a href="http://www.whatisrss.com/">RSS feeds</a> from different formats
+(RSS 1.0, RSS 2.0 etc.) to <a href="http://validator.w3.org/feed/">valid Atom 1.0 format</a>,
+using great <a href="http://www.feedparser.org/">Universal Feed Parser</a> python library.
+</p>
+<p>
+You can consume the feed on URL:
+<pre>
+{{ site_url}}/atom?uri=[Your original feed URL]
+</pre>
+<b>Example:</b> <a href="{{ site_url}}/atom?uri=http://news.ycombinator.com/rss">HackerNews Atom Feed</a>
+</p>
+<p>
+The application also providing additional service for converting RSS feeds 
+to <a href="http://json.org/">JSON format</a> on URL:
+<pre>
+{{ site_url}}/json?uri=[Your original feed URL]
+</pre>
+<b>Example:</b> <a href="{{ site_url}}/json?uri=http://news.ycombinator.com/rss">HackerNews JSON</a>
+</p>
+</div>
+</div>
+<div id="foot">
+<p>This application was build by <a href="http://zhware.net/">Stoyan Zhekov</a>. The code can be found on <a href="http://github.com/zh/feedomizer">GitHub</a>.</p>
+</div>
+</body>
+</html>
